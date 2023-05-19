@@ -25,10 +25,29 @@ function verificaSeOChutePossuiUmValorValido(chute){
         elementoChute.innerHTML += `
         <div> o número secreto é maior <i class="fa-solid fa-arrow-up-long"></i></div>`
     }
+
 }
 
 function chuteForInvalido(numero){
-    return Number.isNaN(numero)
+    
+    if (chute === "game over") {
+        return document.body.innerHTML = `
+        <h2> GAME OVER </h2>
+        <button id='jogar-novamente' class='btn-jogar'> Jogar novamente </button>
+
+        <style> 
+        body{
+            background-color: black;
+            transition: 2.0s
+        }
+        <style>
+        `
+    }
+    
+    else {
+        return Number.isNaN(numero)
+    }
+
 }
 
 function numeroForMaiorOuMenorQueOValorPermitido(numero){
