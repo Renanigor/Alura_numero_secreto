@@ -24,6 +24,9 @@ body{
 h1 {
     font-size: 5em;
 }
+h2{
+    font-size: 4em;
+}
 
 h3 {
     font-size: 2em;
@@ -41,4 +44,12 @@ h3 {
     font-size: 4em;
     padding: 10px;
     margin: 20px;
+}
+
+.btn-jogar{
+    padding: 8px 15px;
+    border: 0;
+    background: var(--primary-color);
+    border-radius: 5px;
+    margin-top: 20px;
 }
